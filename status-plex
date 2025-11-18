@@ -1,2 +1,7 @@
 #!/bin/bash
-systemctl status plexmediaserver.service --no-pager -l
+if systemctl is-active --quiet plexmediaserver.service; then
+  echo "✓ Plex Media Server is running"
+  echo "Access at: http://localhost:32400/web"
+else
+  echo "✗ Plex Media Server is not running"
+fi
