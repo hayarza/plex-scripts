@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo systemctl restart plexmediaserver.service
+echo "Plex Media Server restarted"
+systemctl status plexmediaserver.service --no-pager -l

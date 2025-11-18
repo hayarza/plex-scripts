@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo systemctl stop plexmediaserver.service
+echo "Plex Media Server stopped"
+systemctl status plexmediaserver.service --no-pager -l

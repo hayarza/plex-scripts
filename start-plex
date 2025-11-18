@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo systemctl start plexmediaserver.service
+echo "Plex Media Server started"
+systemctl status plexmediaserver.service --no-pager -l
